@@ -1,4 +1,4 @@
-package com.demo.bankapp.controlle
+package com.demo.bankapp.controller;
 
 import java.util.List;
 
