@@ -5,17 +5,18 @@ pipeline {
     stages {
         stage('build') {
             steps {
-              sh "mvn clean package"
+            echo "building ...."
+            sh 'mvn -B -DskipTests clean package' 
             }
         }
         stage('test') {
             steps {
-                echo 'Hello World war 3.01 ' 
+                echo 'testing .... ' 
             }
     }
          stage('deploy') {
             steps {
-                echo 'Hello World war 3.01 ' 
+                echo 'deploying ....' 
             }
     }
     }
