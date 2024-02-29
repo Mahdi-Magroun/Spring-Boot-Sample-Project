@@ -17,6 +17,7 @@ pipeline {
          stage('deploy') {
             steps {
                 echo 'deploying ....' 
+                sh 'docker build -t myjava_app .'
             }
     }
     }
