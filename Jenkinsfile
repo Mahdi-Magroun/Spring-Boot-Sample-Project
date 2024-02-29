@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Hello World war 3.01 ' 
+              sh "mvn clean install"
             }
         }
         stage('test') {
