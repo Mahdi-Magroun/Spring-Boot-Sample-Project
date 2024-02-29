@@ -102,14 +102,10 @@
          <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.8.0</version>
+        <version>3.5.1</version> <!-- or an earlier version compatible with Java 8 -->
         <configuration>
             <source>1.8</source>
             <target>1.8</target>
-            <compilerArgs>
-                <arg>--add-exports</arg>
-                <arg>java.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
-            </compilerArgs>
         </configuration>
     </plugin>
         </plugins>
